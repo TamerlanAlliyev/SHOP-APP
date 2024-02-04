@@ -22,11 +22,6 @@ int CategoryChoose = 0;
 
 while (request != 0)
 {
-    if (request > 2)
-    {
-        Console.WriteLine("\x1b[91mPlease make the right choice!\x1b[0m");
-    }
-
 
     switch (request)
     {
@@ -36,10 +31,6 @@ while (request != 0)
 
             while (ProductChoose != 0)
             {
-                if (ProductChoose > 5)
-                {
-                    Console.WriteLine("\x1b[91mPlease make the right choice!\x1b[0m");
-                }
                 switch (ProductChoose)
                 {
                     case 1:
@@ -58,6 +49,7 @@ while (request != 0)
                         ProductDelete();
                         break;
                     default:
+                    Console.WriteLine("\x1b[91mPlease make the right choice!\x1b[0m");
                         break;
                 }
 
@@ -73,10 +65,6 @@ while (request != 0)
 
             while (CategoryChoose != 0)
             {
-                if (CategoryChoose > 5)
-                {
-                    Console.WriteLine("\x1b[91mPlease make the right choice!\x1b[0m");
-                }
                 switch (CategoryChoose)
                 {
 
@@ -96,6 +84,7 @@ while (request != 0)
                         ProductDelete();
                         break;
                     default:
+                    Console.WriteLine("\x1b[91mPlease make the right choice!\x1b[0m");
                         break;
                 }
 
@@ -105,6 +94,7 @@ while (request != 0)
             break;
 
         default:
+        Console.WriteLine("\x1b[91mPlease make the right choice!\x1b[0m");
             break;
     }
     Menu();
